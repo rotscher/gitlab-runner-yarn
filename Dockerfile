@@ -8,7 +8,7 @@ RUN curl -sL https://deb.nodesource.com/setup_11.x | bash - && \
     apt-get install -y nodejs && \
     apt-get clean
 
-RUN curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | bash
+RUN npm install -g @angular/cli
 
 RUN useradd gitlab-runner -m
 USER gitlab-runner
